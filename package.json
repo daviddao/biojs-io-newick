@@ -22,10 +22,10 @@
   "keywords": [
     "biojs", "parser", "newick", "extended newick"
   ],
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "mocha --reporter spec",
-    "build-browser": "browserify -r ./:biojs-io-newick> build/biojs-io-newick.min.js"
+    "start": "browserify -r ./:biojs-io-newick> build/biojs-io-newick.min.js"
   },
   "license": "Apache 2",
   "readmeFilename": "README.md",

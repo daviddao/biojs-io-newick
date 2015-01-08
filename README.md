@@ -1,15 +1,27 @@
 BioJS Newick Parser 
 ----------
+
+How to build it 
+
+```javascript 
+npm i 
+npm start
+npm test
+```
+
+Now include biojs-io-newick.min.js in build into your html (see example.html).
 Just call method `parse_newick(string)` for parsing a newick string into JSON. 
 
 ```javascript
-Biojs.io.newick.parse_newick('((A,B),C)');
+var parser = require("biojs-io-newick");
+parser.parse_newick('((A,B),C)');
 ```
 
 Call the method `parse_nhx(string)` for parsing an extended newick formats into JSON.
 
 ```javascript
-Biojs.io.newick.parse_nhx('((A,B),C)');
+var parser = require("biojs-io-newick");
+parser.newick.parse_nhx('((A,B),C)');
 ```
 
 [Example tree](http://en.wikipedia.org/wiki/Newick_format):

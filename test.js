@@ -1,16 +1,14 @@
 
 require('mocha');
 var should = require('should');
-var parser = require('./newick');
-
 var assert = require('chai').assert;
 
 
 describe('BioJS2 Tree Test', function () {
-   
-  
- 
 
+	var parser = require('./src/newick');
+
+	console.log(parser);
     var newick = "((human, chimp), mouse)";
     var tree = parser(newick);
 

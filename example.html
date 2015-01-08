@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<script src="build/biojs-io-newick.min.js"></script>
+	<script>
+	var parser = require("biojs-io-newick");
+	var parsedData = parser.parse_newick("(A:0.1,B:0.2,(C:0.3,D:0.4)E:0.5)F");
+	console.log(parsedData);
+	</script>
+</body>
+</html>
