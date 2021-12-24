@@ -11,21 +11,22 @@
     "name": "David",
     "email": "biojs-technical@googlegroups.com"
   },
+  "type": "module",
   "dependencies": {},
   "devDependencies": {
-    "browserify": "~4.2.0",
-    "uglify-js": "~2.6.0",
     "mocha": "~1.20.1",
     "should": "~4.0.4",
     "chai": "~1.9.1"
   },
   "keywords": [
-    "biojs", "parser", "newick", "extended newick"
+    "biojs",
+    "parser",
+    "newick",
+    "extended newick"
   ],
   "main": "src/index.js",
   "scripts": {
-    "test": "mocha --reporter spec",
-    "start": "browserify -r ./:biojs-io-newick> build/biojs-io-newick.min.js"
+    "test": "mocha --reporter spec"
   },
   "license": "Apache 2",
   "readmeFilename": "README.md",

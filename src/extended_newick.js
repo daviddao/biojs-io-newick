@@ -58,7 +58,7 @@
  * }
  */
 
-module.exports = parse_nhx = function(s) {
+export function parse_nhx(s) {
 	var ancestors = [];
 	var tree = {};
 	// var tokens = s.split(/\s*(;|\(|\)|,|:)\s*/);
@@ -118,5 +118,5 @@ module.exports = parse_nhx = function(s) {
 		}
 	}
 	return tree;
-};
+}
 
