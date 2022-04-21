@@ -1,2 +1,7 @@
-module.exports = require('./newick');
-module.exports.parse_nhx = require('./extended_newick');
+export {
+    parse_json,
+    parse_newick
+} from './newick.js';
+export {
+    parse_nhx
+} from './extended_newick.js';

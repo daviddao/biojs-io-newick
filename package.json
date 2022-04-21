@@ -11,25 +11,27 @@
     "name": "David",
     "email": "biojs-technical@googlegroups.com"
   },
-  "dependencies": {},
+  "type": "module",
   "devDependencies": {
-    "browserify": "~4.2.0",
-    "uglify-js": "~2.6.0",
-    "mocha": "~1.20.1",
-    "should": "~4.0.4",
-    "chai": "~1.9.1"
+    "jest": "^27.4.5"
   },
   "keywords": [
-    "biojs", "parser", "newick", "extended newick"
+    "biojs",
+    "parser",
+    "newick",
+    "extended newick"
   ],
   "main": "src/index.js",
   "scripts": {
-    "test": "mocha --reporter spec",
-    "start": "browserify -r ./:biojs-io-newick> build/biojs-io-newick.min.js"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "license": "Apache 2",
   "readmeFilename": "README.md",
   "bugs": {
     "url": "https://github.com/biojs/biojs2/issues"
+  },
+  "jest": {
+    "testEnvironment": "jest-environment-node",
+    "transform": {}
   }
 }

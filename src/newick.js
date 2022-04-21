@@ -60,7 +60,7 @@
 
 
 
-module.exports.parse_newick = function (s) {
+export function parse_newick(s) {
 	var ancestors = [];
 	var tree = {};
 	var tokens = s.split(/\s*(;|\(|\)|,|:)\s*/);
@@ -93,9 +93,9 @@ module.exports.parse_newick = function (s) {
 		}
 	}
 	return tree;
-};
+}
 
-module.exports.parse_json = function (json) {
+export function parse_json(json) {
 	function nested(nest){
 		var subtree = "";
 
@@ -126,4 +126,4 @@ module.exports.parse_json = function (json) {
 		return subtree;
 	}
 	return nested(json) +";";
-};
+}
